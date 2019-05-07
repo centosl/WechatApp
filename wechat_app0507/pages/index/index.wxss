@@ -1,0 +1,36 @@
+.tab {
+  overflow: hidden;
+  width: 100%;
+}
+
+.t_item {
+  float: left;
+  width: 33.33%;
+  line-height: 34px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  text-align: center;
+  margin-left: -1px;
+}
+
+.t_item.active {
+  background-color: #999;
+}
+
+.t_item + .t_item {
+  border-left: 1px solid #999;
+}
+
+.content {
+  border-bottom: 1px solid #999;
+}
+
+.conent_inner {
+  padding: 10px;
+  background: #ddd;
+  height: 600rpx;
+  width: 100%;
+}
+.content{
+  width: 100%;
+}

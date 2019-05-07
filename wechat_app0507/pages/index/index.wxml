@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="tab">
+    <view class="t_item {{currentTab==index?'active':''}}" bindtap="switchtab" data-index="{{index}}" wx:for="{{items}}" wx:for-index="index" wx:key="index" wx:for-item="item">{{item.name}}</view>
+  </view>
+  <view class="conent_inner" wx:for="{{items}}" data-index='{{idx}}' wx:key="idx" wx:for-index="idx" wx:for-item="items"
+   hidden='{{!(currentTab==idx)}}'>
+    {{idx+items.name}}
+    {{currentTab!=idx}}
+  </view>
+</view>
