@@ -18,9 +18,9 @@ Page({
   },
   //点击切换
   switchtab: function(e) {
-    this.currentTab = e.currentTarget.dataset['index'];
-    console.log("currentTarget:" + e.currentTarget.dataset['index']);
-    console.log(this.currentTab);
+    this.setData({
+      currentTab : e.currentTarget.dataset.index
+    })
   },
   onLoad: function() {
 
